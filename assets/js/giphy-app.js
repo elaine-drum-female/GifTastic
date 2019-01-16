@@ -41,7 +41,7 @@ $("button").on("click", function(){
     });
 });
 
-$('#addTopic').on('click', function () {
+$('#topicSubmit').on('click', function () {
     event.preventDefault();
     $("#topic-input").after("");
     var userInput = $('#topic-input').val().trim();
