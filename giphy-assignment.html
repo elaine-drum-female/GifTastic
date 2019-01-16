@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Giphy API Assignment</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+</head>
+<body>
+    <div id="topicContainer">
+        
+    </div>
+    <form action="" id="topic-form">
+        <label for="topic-input">Add a Topic</label><br/>
+        <input type="text" id="topic-input" /><br/>
+        <input type="submit" id="addTopic" value="submit" />
+    </form>
+
+    <div id="topicResults">
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="giphy-app.js"></script>
+</body>
+</html>
+
+<!--2. JS
+
+   1. get the HTTP request response promise from AJAX then require callback data 
+       from response or whatever argument
+   2. grab and store the value from the input box 
+   3.  Create an ARRAY then loop through items to create each button
+   4. push/add/append this button to the animal buttons div container
+   5. set button to a click handler and then populate API results of rating, 
+        images.fixed_height.url, images.fixed_height_still (same for fixed_width.url, and            fixed_width_still) 
+   6. create a variable to set its state value to data-state
+   7. roll mouse over any of the images to check its current state 
+	IF (image's state is still) 
+		update the src attr to data-animate 'animate', then update data-state attr to "animate"
+	 else 
+		update attr src value to data-still, then update the data-	state attr to "still", 
+   
+
+
+// variables
+   var topicBtnArray = [];
+   var topic = $(this).attr("data-topic");
+   var queryURL= "https://api.giphy.com/v1/gifs/search?q=" +
+        topic + "&api_key=wqWPwnwvmTeWthIWN0Hl90tZizhktHfj&limit=10";
+   var userInput;
+
+-->
