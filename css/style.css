@@ -1,4 +1,7 @@
-button {
+.newTopics {
     background:green;
     color:#fff;
+    padding:10px;
+    margin-right:5px;
 }
+
