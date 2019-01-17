@@ -4,6 +4,7 @@
     padding:10px;
     margin-right:5px;
     border-radius:4px;
+    border:0;
     outline:0;
 }
 
@@ -20,5 +21,6 @@ input[type="submit"] {
     color:#fff;
     padding:10px;
     border-radius:4px;
+    border:0;
     outline:0;
 }
