@@ -61,6 +61,11 @@ $(document).ready(function () {
         });
     }
 
+    // function list
+
+    createGifButton();
+    displayGifs();
+    addnewButton();
 
 });
 
