@@ -1,3 +1,6 @@
+$(document).ready(function () {
+
+});
 // variables
 var topicBtnArray = ["dog" ,"cat", "rabbit", "horse", "hamster", "skunk", "goldfish","bird",
 "ferret", "turtle","sugar glider","chinchilla","hedgehog","hermit crab","gerbil","pygamy goat","chicken",
