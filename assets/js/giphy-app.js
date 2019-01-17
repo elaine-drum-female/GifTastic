@@ -15,7 +15,24 @@ $(document).ready(function () {
         }
     }
 
+    // create new button from the topicSubmit button
+
+    function addnewButton () {
+        $('#topicSubmit').on('click', function () {
+            event.preventDefault();
+            var userInput = $('#topic-input').val().trim();
+            if(!userinput || topicBtnArray.indexOf(userInput) >= 0) {
+                return false;
+            }
+            topicBtnArray.push(userInput); 
+            createGifButton(userInput);
+            return false;
+        });
+    }
+
     
+
+
 });
 
 
