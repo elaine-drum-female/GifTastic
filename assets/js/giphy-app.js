@@ -43,7 +43,7 @@ $(document).ready(function () {
         }). then(function (response) {
             $('#topicResults').empty();
             var results = response.data;
-            if (results = "") {
+            if (results == "") {
                 alert ("No giphy's available!");
             }
             for (var i = 0; i < results.length; i++) {
