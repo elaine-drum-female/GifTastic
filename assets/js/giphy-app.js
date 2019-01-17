@@ -48,7 +48,7 @@ $(document).ready(function () {
             }
             for (var i = 0; i < results.length; i++) {
                 var holdgifDiv = $('<div>');
-                var gifRating = $('p').text("Rating: " + results[i].rating);
+                var gifRating = $('<p>').text("Rating: " + results[i].rating);
                 var gifImage = $('<img>');
                 gifImage.attr('src', results[i].images.fixed_height_still.url)
                 .attr('data-still', results[i].images.fixed_height_still.url)
