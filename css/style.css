@@ -3,6 +3,8 @@
     color:#fff;
     padding:10px;
     margin-right:5px;
+    border-radius:4px;
+    outline:0;
 }
 
 #topicContainer {
@@ -11,4 +13,12 @@
 
 label, input {
     margin-bottom:10px;
+}
+
+input[type="submit"] {
+    background:green;
+    color:#fff;
+    padding:10px;
+    border-radius:4px;
+    outline:0;
 }
