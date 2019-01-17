@@ -8,3 +8,7 @@
 #topicContainer {
     margin: 10px 0;
 }
+
+label, input {
+    margin-bottom:10px;
+}
