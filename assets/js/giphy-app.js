@@ -41,8 +41,24 @@ $(document).ready(function () {
             url:queryURL,
             method:"GET"
         }). then(function (response) {
-            
-        }
+            $('#topicResults').empty();
+            var results = response.data;
+            if (results = "") {
+                alert ("No giphy's available!");
+            }
+            for (var i = 0; i < results.length; i++) {
+                var holdgifDiv = $('<div>');
+                var gifRating = $('p').text("Rating: " + results[i].rating);
+                var gifImage = $('<img>');
+                gifImage.attr('src', results[i].images.fixed_height_still.url)
+                .attr('data-still', results[i].images.fixed_height_still.url)
+                .attr('data-animate', results[i].images.fixed_height.url)
+                .attr('data-state', 'still');
+                gifImage.addClass('image');
+                holdgifDiv.append(gifRating, gifImage);
+                $('#topicResults').append(holdgifDiv);
+            }
+        });
     }
 
 
