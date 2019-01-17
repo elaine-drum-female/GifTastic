@@ -67,6 +67,23 @@ $(document).ready(function () {
     displayGifs();
     addnewButton();
 
+    // event listeners
+
+    $(document).on('click',  '.newTopics', displayGifs);
+    $(document).on('click', '.image', function() {
+        var state = $(this).attr('data-state');
+        if(state == "still") {
+            $(this).attr('src', $(this).data('animate'));
+            $(this).attr('data-state', 'animate');
+        } else {
+            $(this).attr('src', $(this).data('still'));
+            $(this).attr('data-state', 'still');
+
+        }
+    });
+
+
+
 });
 
 
