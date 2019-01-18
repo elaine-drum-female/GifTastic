@@ -1,28 +1,54 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Giphy API Assignment</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="css/reset.css" />  
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
 </head>
+
 <body>
-    <div id="topicContainer">
-        
-    </div>
-    <form action="" id="topic-form">
-        <label for="topic-input">Add a Topic</label><br/>
-        <input type="text" id="topic-input" /><br/>
-        <input type="submit" id="addTopic" value="submit" />
-    </form>
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div id="topicContainer"></div>
+                </div>
+            </div>
+        </div>
 
-    <div id="topicResults">
+        <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-sm-6 col-lg-10">
+                                <div id="topicResults"></div>
+                            </div>
+                            <div class="col-sm-6 col-lg-2">    
+                                    <form action="" id="topic-form">
+                                        <label for="topic-input">Add a Topic</label><br />
+                                        <input type="text" id="topic-input" /><br />
+                                        <input type="submit" id="topicSubmit" value="submit" />
+                                    </form>                      
+                            </div>
+                        </div>
+                    </div>
 
+                </div>
+            </div>
     </div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="giphy-app.js"></script>
+    <script src="assets/js/giphy-app.js"></script>
 </body>
+
 </html>
 
 <!--2. JS
