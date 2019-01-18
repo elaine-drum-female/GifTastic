@@ -85,4 +85,31 @@ input[type="submit"] {
      *zoom: 1;
  }
 
- 
+ @media (max-width:576px) {
+    body {
+        background:blue;
+    }
+
+}
+
+@media (min-width: 992px) {
+    body {
+        background:red;
+    }
+    
+}
+
+@media (max-width:768px) {
+    body {
+        background:green;
+    }
+
+}
+
+@media (max-width:992px) {
+   body {
+       background:pink;
+   }
+}
+
+
