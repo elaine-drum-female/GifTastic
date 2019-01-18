@@ -30,12 +30,12 @@ $(document).ready(function () {
             if(!userInput || topicBtnArray.indexOf(userInput) >= 0) {
                 var errorMsg = $('<p>');
                 errorMsg.addClass("messageError");
-                errorMsg.text("Error: please enter a topic!");
+                //errorMsg.text("Error: please enter a topic!");
                 $('#topic-form').append(errorMsg);
-                //$('#topic-input').after("<p class='messageError'>Error: please enter a topic!</p>");
+                $('#topic-input').after("<p class='messageError'>Error: please enter a topic!</p>");
             } else {
                 
-                $('#topicSubmit').next().empty('messageError');
+                $('#topic-input').next().empty('messageError');
                 topicBtnArray.push(userInput);
                 createGifButton(userInput);
             } 
