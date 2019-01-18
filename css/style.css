@@ -89,6 +89,11 @@ input[type="submit"] {
     *zoom: 1;
 }
 
+.messageError {
+    color:red;
+    width:200px;
+}
+
 @media (min-width:576px) {
 
     p {
