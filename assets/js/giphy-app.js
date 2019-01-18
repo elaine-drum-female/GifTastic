@@ -15,6 +15,12 @@ $(document).ready(function () {
         }
     }
 
+    function removeError() {
+        $(document).on("keyup", ".messageError", function() {
+            $(this).removeClass('messageError');
+        });
+    }
+
     // create new button from the topicSubmit button
 
     function addnewButton () {
@@ -22,11 +28,17 @@ $(document).ready(function () {
             event.preventDefault();
             var userInput = $('#topic-input').val().trim();
             if(!userInput || topicBtnArray.indexOf(userInput) >= 0) {
-                return false;
-            }
-            topicBtnArray.push(userInput); 
-            createGifButton(userInput);
-            return false;
+                var errorMsg = $('<p>');
+                errorMsg.addClass("messageError");
+                errorMsg.text("Error: please enter a topic!");
+                $('#topic-form').append(errorMsg);
+                //$('#topic-input').after("<p class='messageError'>Error: please enter a topic!</p>");
+            } else {
+                
+                $('#topicSubmit').next().empty('messageError');
+                topicBtnArray.push(userInput);
+                createGifButton(userInput);
+            } 
         });
     }
 
@@ -72,6 +84,8 @@ $(document).ready(function () {
     // event listeners
 
     $(document).on('click',  '.newTopics', displayGifs);
+    
+
     $(document).on('click', '.image', function() {
         var state = $(this).attr('data-state');
         if(state == "still") {
