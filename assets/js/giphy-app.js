@@ -1,6 +1,6 @@
 $(document).ready(function () {
     // variables
-    var topicBtnArray = ["computers", "music", "guitar", "drums", "the masked singer", "taylor swift"];
+    var topicBtnArray = ["the masked singer", "computers", "music", "guitar", "drums", "taylor swift"];
 
     // create gif button
 
@@ -48,6 +48,8 @@ $(document).ready(function () {
             }
             for (var i = 0; i < results.length; i++) {
                 var holdgifDiv = $('<div>');
+                holdgifDiv.addClass('newSmall');
+                holdgifDiv.addClass('cf');
                 var gifRating = $('<p>').text("Rating: " + results[i].rating);
                 var gifImage = $('<img>');
                 gifImage.attr('src', results[i].images.fixed_height_still.url)
