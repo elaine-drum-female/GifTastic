@@ -88,7 +88,7 @@ input[type="submit"] {
     *zoom: 1;
 }
 
-@media (max-width:1500px) {
+@media (min-width:576px) {
 
     p {
         margin-bottom:10px;
