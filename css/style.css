@@ -12,7 +12,7 @@ img {
 }
 
 .newSmall {
-    float: left;
+    display:inline-block;
     width: 250px;
     margin-right: 10px;
 }
@@ -94,10 +94,10 @@ input[type="submit"] {
     width:200px;
 }
 
-@media (min-width:576px) {
+@media (min-width:320px) {
 
-    p {
-        margin-bottom:10px;
+    .image {
+        margin-top:10px;
     }
 }
 
