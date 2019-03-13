@@ -67,6 +67,7 @@ a {
     border: 0;
 }
 
+.topic-button,
 input[type="submit"] {
     background: #6aa3aa;
     color: #fff;
