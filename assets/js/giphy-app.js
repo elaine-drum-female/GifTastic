@@ -1,6 +1,6 @@
 $(document).ready(function () {
     // variables
-    var topicBtnArray = ["the masked singer", "computers", "music", "guitar", "drums", "taylor swift"];
+    var topicBtnArray = ["the masked singer", "computers", "music", "guitar", "drums", "taylor swift",  "cats" ,"dogs", "smartphones"];
 
     // create gif button
 
