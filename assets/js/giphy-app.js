@@ -25,6 +25,8 @@ $(document).ready(function () {
 
     function addnewButton () {
         $('#topicSubmit').on('click', function () {
+            debugger;
+            $('#topicResults').empty();
             event.preventDefault();
             var userInput = $('#topic-input').val().trim();
             if(!userInput || topicBtnArray.indexOf(userInput) >= 0) {
