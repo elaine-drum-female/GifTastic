@@ -40,6 +40,23 @@ img {
     height:30px;
 }
 
+form {
+    float: none;
+    width: 100%;
+    padding: 0;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 700;
+  }
+
+  label,
+input {
+    margin-bottom: 10px;
+}
+
 .image {
     max-width: 250px;
 }
