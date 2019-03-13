@@ -66,8 +66,20 @@ $(document).ready(function () {
         }
       });
 
-
+      $("#topic-Submit").on("click", function(event) {
+        
+        event.preventDefault();
+        var newTopic = $("#topic-input").eq(0).val();
     
-
-
-});
+        if (newTopic.length > 2) {
+          topicBtnArray.push(newTopic);
+        }
+    
+        createButton(topicBtnArray, "topic-button", "#topic-button-container");
+    
+      });
+    
+      createButton(topicBtnArray, "topic-button", "#topic-button-container");
+    });
+   
+    
