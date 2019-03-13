@@ -15,36 +15,31 @@
 </head>
 
 <body>
-    <div class="container-fluid">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <div id="topicContainer"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6">
+                        <div id="topic-button-container"></div>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <form id="topic-form">
+                            <label for="topic-input">Add a Topic</label>
+                            <input type="text" id="topic-input" /><br>
+                            <input type="submit" id="topic-Submit" value="submit" />
+                        </form>
+                    </div>
                 </div>
+                
             </div>
         </div>
-
-        <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="row">
-                            <div class="col-sm-6 col-lg-10">
-                                <div id="topicResults"></div>
-                            </div>
-                            <div class="col-sm-6 col-lg-2">    
-                                    <form action="" id="topic-form">
-                                        <label for="topic-input">Add a Topic</label><br />
-                                        <input type="text" id="topic-input" /><br />
-                                        <input type="submit" id="topicSubmit" value="submit" />
-                                    </form>                      
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div id="topics"></div>
             </div>
+        </div>
     </div>
-
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="assets/js/giphy-app.js"></script>
 </body>
