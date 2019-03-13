@@ -106,11 +106,6 @@ input[type="submit"] {
     *zoom: 1;
 }
 
-.messageError {
-    color:red;
-    width:200px;
-}
-
 @media (min-width:320px) {
 
     .image {
@@ -118,6 +113,19 @@ input[type="submit"] {
     }
 }
 
+@media (min-width:768px) {
+    
+    .topic-item {
+        float:left;
+        padding:10px;
+    }
+
+    form {
+        float: right;
+        width: 70%;
+        padding: 20px;
+      }
+}
       
 
     
