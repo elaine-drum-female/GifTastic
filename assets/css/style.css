@@ -13,6 +13,33 @@ img {
     padding: 0 20px;
 }
 
+#topics {
+    width:100%;
+}
+
+.topic-item {
+    float:none;
+    padding:10px;
+}
+
+.topic-button {
+    margin-right:10px;
+    margin-bottom:10px;
+}
+
+.topic-button:hover {
+    background: black;
+}
+
+.topic-button.active {
+    background: black;
+}
+
+#topic-input {
+    width: 100%;
+    height:30px;
+}
+
 .image {
     max-width: 250px;
 }
