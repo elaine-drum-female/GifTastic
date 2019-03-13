@@ -1,19 +1,17 @@
 $(document).ready(function () {
-    // variables
+    
     var topicBtnArray = ["the masked singer", "computers", "music", "guitar", "drums", "taylor swift",  "cats" ,"dogs", "smartphones"];
 
-    // create gif button
-
-    function createGifButton() {
-        $('#topicContainer').empty();
-        for(var i = 0; i < topicBtnArray.length;i++) {
-            var uniqueButton = $("<button>");
-            uniqueButton.addClass('newTopics');
-            uniqueButton.attr('data-topic', topicBtnArray[i]);
-            uniqueButton.text(topicBtnArray[i]);
-            $('#topicContainer').append(uniqueButton);
-        }
-    }
+   function createButton(topicsArray, topicClass,storeTopicResults) {
+       $(storeTopicResults).empty();
+       for(var i = 0; i < topicsArray.length;i++) {
+           var a = $("<button>");
+           a.addClass(topicClass);
+           a.attr("data-type", topicsArray[i]);
+           a.text(topicsArray[i]);
+           $(storeTopicResults).append(a);
+       }
+   }
 
     function removeError() {
         $(document).on("keyup", ".messageError", function() {
