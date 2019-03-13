@@ -13,11 +13,7 @@ $(document).ready(function () {
        }
    }
 
-    function removeError() {
-        $(document).on("keyup", ".messageError", function() {
-            $(this).removeClass('messageError');
-        });
-    }
+   
 
     // create new button from the topicSubmit button
 
